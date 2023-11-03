@@ -22,7 +22,7 @@ public class UserService {
      public User addUser(User user){
       return userRepo.save(user);
   }
-  public List<User> showdUsers(){
+  public List<User> showAllUsers(){
       return userRepo.findAll();
   } 
   
