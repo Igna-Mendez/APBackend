@@ -21,7 +21,7 @@ public class User implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(nullable = false, updatable = false)
-    private Long id;
+    private Long idUser;
     private String name;
     private String lastName;
     private String title;
@@ -37,8 +37,8 @@ public class User implements Serializable {
    
    public User() {}
 
-    public User(Long id, String name, String lastName, String title, String about, String img) {
-        this.id = id;
+    public User(Long idUser, String name, String lastName, String title, String about, String img) {
+        this.idUser = idUser;
         this.name = name;
         this.lastName = lastName;
         this.title = title;

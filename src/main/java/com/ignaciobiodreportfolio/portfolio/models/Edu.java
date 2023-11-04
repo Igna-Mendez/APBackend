@@ -15,20 +15,21 @@ public class Edu {
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
-    private String tituloEdu;
+    private Long idEdu;
+    private String titleEdu;
     private int startDate;
     private int endDate;
     private String info;
     private String img;
+  
 
     public Edu() {
     }
 
     
-    public Edu(Long id, String tituloEdu, int startDate, int endDate, String img){ 
-    this.id = id;
-    this.tituloEdu = tituloEdu;
+    public Edu(Long idEdu, String titleEdu, int startDate, int endDate, String img, String info){ 
+    this.idEdu = idEdu;
+    this.titleEdu = titleEdu;
     this.startDate = startDate;   
     this.endDate = endDate;
     this.info = info; 

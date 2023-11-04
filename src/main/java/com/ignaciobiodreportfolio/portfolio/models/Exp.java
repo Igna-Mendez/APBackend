@@ -14,7 +14,7 @@ public class Exp {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private Long idExp;
     private String name;
     private int dateExp;
     private int endExp;
@@ -25,8 +25,8 @@ public class Exp {
     }
 
 
-    public Exp(Long id, String name, int dateExp,int endExp, String about, String img){ 
-    this.id = id;
+    public Exp(Long idExp, String name, int dateExp,int endExp, String about, String img){ 
+    this.idExp = idExp;
     this.name = name;
     this.dateExp = dateExp;  
     this.endExp = endExp;
